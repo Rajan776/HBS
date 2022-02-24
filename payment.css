@@ -1,0 +1,19 @@
+body,
+html {
+    height: 100%;
+}
+
+.logo {
+    height: 60px;
+    width: 60px;
+}
+
+.content {
+    height: 500px;
+    width: 500px;
+}
+
+.footer {
+    Height: 20px;
+    width: 22px;
+}
