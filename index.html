@@ -3,6 +3,52 @@
 
 <head>
     <title>Hotel Website</title>
+    <style>
+        body,
+        html {
+            height: 100%;
+            margin: 0px;
+            background-color: #e0e0e0;
+        }
+        
+        .logo {
+            height: 60px;
+            width: 60px;
+        }
+        
+        .search_bar {
+            background-image: url('https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 380px;
+            background-size: cover;
+        }
+        
+        .city_cards {
+            text-align: center;
+            display: flex;
+            margin-left: 15%;
+            margin-right: 15%;
+            padding: 20px;
+            padding-left: 4%;
+            padding-right: 4%;
+            padding-top: 4%;
+            padding-bottom: 4%;
+        }
+        
+        header {
+            background-color: rosybrown;
+        }
+        
+        content {
+            height: 150px;
+            width: 150px;
+        }
+        
+        footer {
+            background-color: rosybrown;
+        }
+    </style>
 </head>
 
 <body>
@@ -13,7 +59,7 @@
             <img src="assests/images/logo.png" alt="logo" height=100px width=150px/>
             <a href="login.html" class="nav-link">LognIn</a>
     </div>
-    <input type="text" placeholder="City" name="search">
+    <!-- <input type="text" id="myInput" placeholder="City" name="search">>-->
     </div>
     </header>
     <!---End-header--->
@@ -21,11 +67,18 @@
     <div>
         <div class="container">
             <div id="content">
-                <a href="list.html" class="nav-link" id="content">
-                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg" width=300px height=300px></a>
-                <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg" width=300px height=300px>
-                <img src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg" width=300px height=300px>
-                <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg" width=300px height=300px>
+                <div class="search_bar">
+                    <form class="city_bar">
+                        <input type="text" placeholder="City" class="search">
+                    </form>
+                </div>
+                <div class="city_cards">
+                    <a href="list.html" class="nav-link" id="content">
+                        <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg" width=300px height=300px></a>
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg" width=300px height=300px>
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg" width=300px height=300px>
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg" width=300px height=300px>
+                </div>
             </div>
             <a href="index.html" class="nav-link" id="content">View more</a>
         </div>
