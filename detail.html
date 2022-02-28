@@ -5,16 +5,20 @@
     <title>Hotel Website</title>
 
     <style>
-            body,
+        body,
         html {
             height: 100%;
             margin: 0px;
             background-color: #e0e0e0;
+            font-family: 'Ubuntu';
+            font-size: 20px;
         }
         
-        .logo {
-            height: 60px;
-            width: 60px;
+        .login {
+            margin-left: 80%;
+            vertical-align: center;
+            color: black;
+            text-decoration: none;
         }
         
         header {
@@ -32,8 +36,23 @@
             width: 150px;
         }
         
+        .social {
+            float: right;
+        }
+        
+        .contact_us {
+            text-align: left;
+            padding-top: 2%;
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+        }
+        
         footer {
             background-color: rosybrown;
+            text-align: center;
+            font-size: 10px;
+        }
     </style>
 </head>
 
@@ -43,7 +62,7 @@
         <div class="left-container"></div>
         <a href="index.html" class="b-foot">
             <img src="assests/images/logo.png" alt="logo" height=100px width=150px/></a>
-        <a href="login.html" class="nav-link" id="login">LognIn</a>
+        <a href="login.html" class="login" id="login">LognIn</a>
         </div>
         </div>
     </header>
@@ -94,20 +113,22 @@
     <!---start-footer--->
     <footer>
         <div class="footer">
-            <a href="contact.html" class="nav-link" id="contact us">Contact Us</a>
-            <div>
-                <a href="https://www.facebook.com" class="nav-link">
+            <div class="contact_us">
+                <a href="contact.html" class="contact_us" id="contact_us">Contact Us</a>
+            </div>
+
+            <div class="social">
+                <a href="https://www.facebook.com" class="social">
                     <img src="assests/images/facebook.png" width=22px height=20px></a>
 
-                <a href="https://www.twitter.com" class="nav-link">
+                <a href="https://www.twitter.com" class="social">
                     <img src="assests/images/twitter.png" width=22px height=20px></a>
 
-                <a href="https://www.instagram.com" class="nav-link">
+                <a href="https://www.instagram.com" class="social">
                     <img src="assests/images/instagram.png" width=22px height=20px></a>
+
             </div>
             <p>@ 2020 ROOM SEARCH PVT LTD</p>
-        </div>
-        </div>
         </div>
     </footer>
 
