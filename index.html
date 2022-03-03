@@ -1,196 +1,181 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <title>Hotel Website</title>
-    <link href='https://fonts.googleapis.com/css2?family=Ubuntu&display=swap' rel='stylesheet'>
-    <style>
-        body,
-        html {
-            height: 100%;
-            margin: 0px;
-            background-color: #e0e0e0;
-            font-family: 'Ubuntu';
-            font-size: 20px;
-        }
-        
-        .header {
-            background-color: rosybrown;
-        }
-        
-        .search_bar {
-            background-image: url('https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg');
-            background-repeat: no-repeat;
-            background-position: center;
-            height: 380px;
-            background-size: cover;
-            border: 1px;
-            width: 100%;
-            background-color: #f1f1f1;
-        }
-        
-        .city_bar {
-            margin-left: 45%;
-            padding-top: 10%;
-            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-        }
-        
-        .login {
-            margin-left: 80%;
-            vertical-align: center;
-            color: black;
-            text-decoration: none;
-        }
-        
-        .city_cards {
-            display: flex;
-            flex-direction: row;
-        }
-        /*.overlay {
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            opacity: 0;
-            transition: .5s ease;
-            background-color: rgba(0, 0, 0, 0.5);
-        }
-        
-        .text {
-            color: black;
-            font-size: 20px;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            text-align: center;
-            margin-right: 25%
-        }
-        */
-        
-        .card {
-            margin-left: 5%;
-            margin-right: 5%;
-            padding-top: 2%;
-            padding-bottom: 2%;
-            padding-left: 2%;
-            padding-right: 2%;
-            position: relative;
-            width: 50%;
-        }
-        
-        .View {
-            margin-left: 45%;
-            margin-top: 10%;
-            margin-bottom: 10%;
-            color: black;
-            text-decoration: none;
-        }
-        
-        .content {
-            height: 150px;
-            width: 150px;
-        }
-        
-        .social {
-            float: right;
-        }
-        
-        .contact_us {
-            text-align: left;
-            padding-top: 2%;
-            text-decoration: none;
-            color: black;
-            font-size: 20px;
-            margin-left: 2%;
-        }
-        
-        footer {
-            background-color: rosybrown;
-            text-align: center;
-            font-size: 10px;
-            vertical-align: center;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap">
+
+    <link rel="stylesheet" href="styles\index.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- bootstrap link -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+
 </head>
 
 <body>
-    <div>
-        <!---start-header--->
-        <header>
-            <div class="left-container">
-                <img src="assests/images/logo.png" alt="logo" height=100px width=150px/>
-                <a href="login.html" class="login">Login</a>
-            </div>
-    </div>
-    </header>
-    <!---End-header--->
-    <!---start-content----->
-    <div>
-        <div class="container">
-            <div id="content">
-                <div class="search_bar">
-                    <form class="city_bar">
-                        <input type="text" placeholder="City" class="search">
-                    </form>
-                </div>
-                <div class="city_cards">
-                    <div class="card">
-                        <a href="list.html" class="cards" id="content">
-                            <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg" width=150px height=150px></a>
-                        <div class="overlay">
-                            <div class="text">Delhi</div>
-                        </div>
-                    </div>
+    <div id="main" class="main">
+        <header class="header_div d-flex justify-content-between align-items-center">
+            <img class="logo_img" src="assests\images\logo.png" alt="logo" width="150px" height="200px">
 
-                    <div class="card">
-                        <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg" width=150px height=150px>
-                        <div class="overlay">
-                            <div class="text">Goa</div>
-                        </div>
-                    </div>
 
-                    <div class="card">
-                        <img src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg" width=150px height=150px>
-                        <div class="overlay">
-                            <div class="text">Hyderabad</div>
-                        </div>
-                    </div>
+            <button type="button" class="login btn-light btn-sm m-2" data-toggle="modal" data-target="#loginModal">
+                Login
+                </button>
 
-                    <div class="card">
-                        <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg" width=150px height=150px>
-                        <div class="overlay">
-                            <div class="text">Kolkata</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <a href="index.html" class="View" id="content">View more</a>
-        </div>
-    </div>
-    <!---start-footer--->
-    <footer>
-        <div class="footer">
-            <div class="contact_us">
-                <a href="contact.html" class="contact_us" id="contact_us">Contact Us</a>
+
+        </header>
+
+        <div class="content_div">
+
+            <div class="search_bar">
+                <form class="city_bar">
+                    <input type="text" placeholder="City" class="search" />
+                </form>
             </div>
 
-            <div class="social">
-                <a href="https://www.facebook.com" class="social">
-                    <img src="assests/images/facebook.png" width=22px height=20px></a>
 
-                <a href="https://www.twitter.com" class="social">
-                    <img src="assests/images/twitter.png" width=22px height=20px></a>
+            <div class="image_div">
 
-                <a href="https://www.instagram.com" class="social">
-                    <img src="assests/images/instagram.png" width=22px height=20px></a>
+                <a href="list.html" class="image_link">
+                    <div class="place_div">
+                        <img class="image" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg" alt="Delhi" height="300px" width="300px">
+                        <div class="overlay">Delhi</div>
+                    </div>
+                </a>
+
+
+                <a href="#" class="image_link">
+                    <div class="place_div">
+                        <img class="image" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg" alt="Goa" height="300px" width="300px">
+                        <div class="overlay">Goa</div>
+                    </div>
+                </a>
+
+
+
+                <a href="#" class="image_link">
+                    <div class="place_div">
+                        <img class="image" src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg" alt="Hyderabad" height="300px" width="300px">
+                        <div class="overlay">Hyderabad</div>
+                    </div>
+                </a>
+
+
+
+                <a href="#" class="image_link">
+                    <div class="place_div">
+                        <img class="image" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg" alt="Kolkata" height="300px" width="300px">
+                        <div class="overlay">Kolkata</div>
+                    </div>
+                </a>
+
 
             </div>
-            <p>@ 2020 ROOM SEARCH PVT LTD</p>
+            <div class="more">
+                <form action="index.html">
+                    <button type="submit" class="view_more_btn btn-secondary">View More</button>
+                </form>
+            </div>
         </div>
 
-    </footer>
+        <footer class="footer_div d-flex">
+
+
+            <button type="button" class="contact_us_btn btn-info btn-sm m-2" data-toggle="modal" data-target="#loginModals">
+                    Contact Us
+                </button>
+
+            <div class="copyrights align-bottom">
+                <p>© 2020 ROOM SEARCH PVT. LTD.</p>
+            </div>
+
+            <div class="media">
+                <a href="https://www.facebook.com" target="_blank">
+                    <img class="social_media" src="assests\images\facebook.png" alt="Facebook" height="20px" width="22px">
+                </a>
+                <a href="https://www.instagram.com" target="_blank">
+                    <img class="social_media" src="assests\images\instagram.png" alt="Instagram" height="20px" width="22px">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img class="social_media" src="assests\images\twitter.png" alt="Twitter" height="20px" width="22px">
+                </a>
+            </div>
+
+        </footer>
     </div>
+
+
+    <!-- login model -->
+
+    <div class="modal fade" role="dialog" id="loginModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Please Login</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <form action="index.html" class="text-center">
+                    <div class="modal-body text-center">
+                        <div class="form-group">
+                            <label for="username">Username:</label>
+                            <input type="text" id="username" name="username" placeholder="Enter Username" autocomplete="off" required />
+                            <br />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password">Password:</label>
+                            <input type="password" id="password" name="password" placeholder="Enter Password" autocomplete="off" required/>
+                            <br />
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-success text-center">Sign in</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- contact us -->
+    <div class="modal fade" role="dialog" id="loginModals">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Get in Touch</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="section ml-3">
+                    <p>Thank you for reaching out!!</p>
+                    <p>Please enter your email and we will get back to you</p>
+                </div>
+                <form action="index.html">
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="username">Email:</label>
+                            <input type="text" placeholder="Enter your email" autocomplete="off" required />
+                        </div>
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-success">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
 </body>
 
 </html>

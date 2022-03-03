@@ -1,38 +1,22 @@
-<!DOCTYPE HTML>
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Hotel Website</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
 </head>
-
 <body>
-    <div class="login">
-        <div class="box">
-            <form action="" class="log-form">
-                <div class="form-item">
-
-                    <div class="lbold">
-                        <label for="User Name">User Name</label>
-                    </div>
-
-                    <class="fa fa-1x fa-envelope" aria-hidden="true">
-                        <input type="User Name" id="User Name" name="User Name" placeholder="Enter UserName" required>
-                </div>
-                <div class="form-item">
-                    <div class="lbold">
-                        <label for="psw">Password</label>
-                    </div>
-                    <class="fas fa-1x fa-key">
-                        <input type="password" id="psw" name="password" placeholder="Enter password" required>
-                </div>
-                <div class="form-foot">
-                    <a href="index.html" class="b-foot">
-                        <button id="btn" class="nav-link">LOGIN</button></a>
-                </div>
-            </form>
-        </div>
+    <div class="main">
+        <form action="index.html">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Enter Username" autocomplete="off" required />
+            <br />
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter Password" autocomplete="off" required/>
+            <br />
+            <input type="submit" value="Login" />
+        </form>
     </div>
-
 </body>
-
 </html>
